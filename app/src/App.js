@@ -40,31 +40,31 @@ const ProductCard = () => {
         <div className="product-imgs">
           <div className="img-display">
             <div className="img-showcase" style={{ transform: `translateX(${-selectedImage * 100}%)` }}>
-              <img src='shoes_images/shoe_1.jpg' alt="shoe1" />
-              <img src="shoes_images/shoe_2.jpg" alt="shoe2" />
-              <img src="shoes_images/shoe_3.jpg" alt="shoe3" />
-              <img src="shoes_images/shoe_4.jpg" alt="shoe4" />
+              <img src={require('./shoes_images/shoe_1.jpg')} alt="shoe1" />
+              <img src={require('./shoes_images/shoe_2.jpg')} alt="shoe2" />
+              <img src={require('./shoes_images/shoe_3.jpg')}alt="shoe3" />
+              <img src={require('./shoes_images/shoe_4.jpg')} alt="shoe4" />
             </div>
           </div>
           <div className="img-select">
             <div className="img-item">
               <a href="#" onClick={() => setSelectedImage(0)}>
-                <img src="shoes_images/shoe_1.jpg" alt="shoe1" />
+                <img src={require('./shoes_images/shoe_1.jpg')} alt="shoe1" />
               </a>
             </div>
             <div className="img-item">
               <a href="#" onClick={() => setSelectedImage(1)}>
-                <img src="shoes_images/shoe_2.jpg" alt="shoe2" />
+                <img src={require('./shoes_images/shoe_2.jpg')} alt="shoe2" />
               </a>
             </div>
             <div className="img-item">
               <a href="#" onClick={() => setSelectedImage(2)}>
-                <img src="shoes_images/shoe_3.jpg" alt="shoe3" />
+                <img src={require('./shoes_images/shoe_3.jpg')} alt="shoe3" />
               </a>
             </div>
             <div className="img-item">
               <a href="#" onClick={() => setSelectedImage(3)}>
-                <img src="shoes_images/shoe_4.jpg" alt="shoe4" />
+                <img src={require('./shoes_images/shoe_4.jpg')} alt="shoe4" />
               </a>
             </div>
           </div>
